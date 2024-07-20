@@ -13,14 +13,17 @@ const SearchForm = () => {
   const handleSearch = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get("http://localhost:3001/search", {
-        params: {
-          textBoxQuery,
-          keyword1,
-          keyword2,
-          excludeWord,
-        },
-      });
+      const response = await axios.get(
+        "https://web-scraper-qes3.onrender.com/search",
+        {
+          params: {
+            textBoxQuery,
+            keyword1,
+            keyword2,
+            excludeWord,
+          },
+        }
+      );
       setResults(response.data);
     } catch (error) {
       console.error("There was an error fetching the data!", error);
