@@ -1,0 +1,73 @@
+.inp{
+    padding : 0.5rem;
+    background: #ffffff;
+    display:flex;
+    align-items:center;
+    border-radius: 0.5rem;
+    outline: none;
+  }
+
+  .inp>input{
+    width: calc(100% - 3rem);
+    outline: none;
+    padding: 1.25rem;
+    color: white;
+  }
+
+  /* Container for the select element */
+.select-container {
+    position: relative;
+    width: 200px;
+    margin: 20px 0;
+    padding : 0.5rem;
+}
+
+/* Base styles for the select element */
+.select-container select {
+    width: 100%;
+    padding: 10px;
+    border: none; /* Use your primary or secondary color */
+    border-radius: 5px;
+    background-color: #f4f4f9; /* Background color for the select */
+    color: #0f3460; /* Text color */
+    font-size: 16px;
+    -webkit-appearance: none; /* Remove default arrow in WebKit browsers */
+    -moz-appearance: none; /* Remove default arrow in Firefox */
+    appearance: none; /* Remove default arrow in other browsers */
+    cursor: pointer;
+    outline: none;
+}
+
+/* Custom arrow for the select element */
+.select-container::after {
+    content: '\25BC'; /* Unicode for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Make sure the arrow does not block clicks */
+    color: #0f3460; /* Color of the arrow */
+}
+
+/* Hover and focus styles */
+.select-container select:hover, 
+.select-container select:focus {
+    border-color: #e94560; /* Accent color for hover and focus */
+    box-shadow: 0 0 5px rgba(233, 69, 96, 0.5); /* Add a shadow for focus */
+}
+
+.table tr {
+    border-radius: 20px;
+  }
+
+  tr td:nth-child(n + 6),
+  tr th:nth-child(n + 6) {
+    border-radius: 0 0.625rem 0.625rem 0;
+  }
+
+  tr td:nth-child(1),
+  tr th:nth-child(1) {
+    border-radius: 0.625rem 0 0 0.625rem;
+  }
+
+
